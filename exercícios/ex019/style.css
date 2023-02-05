@@ -1,0 +1,60 @@
+/*
+HTML id = CSS #
+HTML class = CSS .
+*/
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'lemon-milk' ;
+    src: url('../ex018/fonts/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    background-image: linear-gradient(to bottom, #E7EEE9, #B7CDBD);
+}
+
+main{
+    background-color: #ECE8EF;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 12px #697385b7;
+}
+
+
+h1{
+    font-family: 'lemon-milk' , 'sans-serif';
+    color: #4E598C;
+}
+
+h1#principal{
+    text-align: center;
+    color: #697bcb;
+}
+
+h2{
+    font-family: 'lemon-milk';
+    color: #FF8C42;
+}
+
+p{
+    font-family: monospace;
+    text-align: justify;
+}
+
+.basico{
+    color: #FF8C42;
+}
+
+.intermediario{
+    color: #FF680A;
+}
+
+.avancado{
+    color: #E03C00;
+}

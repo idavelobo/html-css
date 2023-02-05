@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+        background-image: linear-gradient(to bottom, #E7EEE9, #B7CDBD);
+        }
+
+        @font-face {
+        font-family: 'lemon-milk' ;
+        src: url('../ex018/fonts/LEMONMILK-Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        main{
+        background-color: #ECE8EF;
+        width: 800px;
+        padding: 20px;
+        border-radius: 8px;
+        margin: auto;
+        box-shadow: 4px 4px 10px #6973855e;
+        }
+
+        header{
+            background-color: #ECE8EF;
+            padding: 12px;
+            margin: -6px 20px 20px 20px;
+            border-radius: 12px;
+            border: 1px solid rgb(141, 141, 141);
+            box-shadow: 1px 1px 6px #697385b7;
+        }
+
+        header > h1{
+            text-align: center;
+            font-family: "lemon-milk";
+            color: #FF8C42;
+        }
+
+        nav{
+            background-color: #dddbdf;
+            font-family: monospace;
+            border-radius: 4px;
+            box-shadow: 1px 1px 2px #697385b7;
+        }
+
+        nav > p{
+            display: inline;
+            padding: 20px;
+            margin: 0px 30px 0px 10px;
+        }
+
+        nav > a{
+            color: #4E598C;
+            text-decoration: none;
+            margin: 0px 20px 0px 20px;
+        }
+
+        nav > a:hover{
+            color: #697bcb;
+        }
+
+        nav > a:active{
+            color: #6f88f9;
+        }
+
+        article{
+            background-color: #dddbdf;
+            padding: 14px;
+            margin: 20px;
+            border-radius: 4px 2px;
+        }
+
+        article > h2{
+            text-align: center;
+            color: #4E598C;
+            background-color: #889ae829;
+            border-radius: 6px;
+            font-family: 'lemon-milk';
+            font-size: 18px;
+        }
+
+        article > p{
+            font-family: monospace;
+        }
+
+        article > aside > p{
+            background-color: #cacaca;
+            margin-top: 40px;
+            margin-bottom: 0px;
+            padding: 4px;
+            border-radius: 2px;
+        }
+
+        section#artigos{
+            background-color: #cacaca;
+            padding: 6px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        section#artigos > h2{
+            text-align: center;
+            font-family: 'lemon-milk';
+            color: #697bcb;
+        }
+
+        section#assuntos{
+            background-color: #cacaca;
+            padding: 6px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        section#assuntos > h2{
+            text-align: center;
+            font-family: 'lemon-milk';
+            color: #697bcb;
+        }
+
+        section#assuntos > section > p{
+            display: inline;
+            margin: auto 20px auto 20px;
+        }
+
+        footer{
+            background-color: #808080;
+            margin: 80px 0px 0px 0px;
+            padding: 2px;
+            border-radius: 2px;
+        }
+
+        footer > p{
+            text-align: center;
+            color: #fff;
+            margin: 0px;
+        }
+
+        body{
+            margin: 0px;
+        }
+
+        section#assuntos > section{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Genérico</h1>
+        <nav>
+            <p>Menu Genérico</p>
+            <a href="#">Link Genérico</a>
+            <a href="#">Link Genérico</a>
+            <a href="#">Link Genérico</a>
+            <a href="#">Link Genérico</a>
+            <a href="#">Link Genérico</a>
+            <a href="#">Link Genérico</a>
+            <a href="#">Link Genérico</a>
+        </nav>
+    </header>
+    <main>
+        <section id="artigos">
+            <h2>Artigos</h2>
+            <article>
+                <h2>Artigo Genérico</h2>
+                <p>Parágrafo de lorem Genérico: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt ipsa. Deserunt quisquam iure eum necessitatibus placeat reprehenderit consectetur ratione dicta esse reiciendis adipisci quos sapiente dignissimos quidem, minus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel sed, harum assumenda maiores officiis ex? Fugiat dolor debitis magni officia libero, voluptas fugit culpa rerum iure enim voluptatum deserunt.</p>
+                <aside>
+                    <p>Feito por pessoa genérica</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Artigo Genérico</h2>
+                <p>Parágrafo de lorem Genérico: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt ipsa. Deserunt quisquam iure eum necessitatibus placeat reprehenderit consectetur ratione dicta esse reiciendis adipisci quos sapiente dignissimos quidem, minus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel sed, harum assumenda maiores officiis ex? Fugiat dolor debitis magni officia libero, voluptas fugit culpa rerum iure enim voluptatum deserunt.</p>
+                <aside>
+                    <p>Feito por pessoa genérica</p>
+                </aside>
+            </article>
+        </section>
+        <section id="assuntos">
+            <h2>Assuntos</h2>
+            <section>
+                <p>Assunto Genérico 1</p>
+                <p>Assunto Genérico 2</p>
+                <p>Assunto Genérico 3</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por pessoa genérica</p>
+    </footer>
+</body>
+</html>
