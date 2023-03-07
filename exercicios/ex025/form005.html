@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+        fieldset{
+            max-width: 400px;
+        }
+        input.wbut{
+            max-width: 70px;
+            min-width: 30px;
+        }
+        input.chkbox{
+            max-width: 80px;
+            min-width: 30px;
+        }
+        input.radio{
+            max-width: 80px;
+            min-width: 30px;
+        }
+        input{
+            min-width: 370px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="gender" id="imale" class="radio">
+            <label for="imale">Masculino</label> <br>
+            <input type="radio" name="gender" id="ifemale" class="radio">
+            <label for="ifemale">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="sfb" id="isfb" class="chkbox">
+            <label for="isfb">Futebol</label> <br>
+
+            <input type="checkbox" name="sbb" id="isbb" class="chkbox">
+            <label for="isbb">Basquete</label> <br>
+
+            <input type="checkbox" name="svb" id="isvb" class="chkbox">
+            <label for="isvb">Vôlei</label> <br>
+
+            <input type="checkbox" name="stn" id="istn" class="chkbox">
+            <label for="istn">Tênis</label> <br>
+
+            <input type="checkbox" name="snt" id="isnt" class="chkbox">
+            <label for="isnt">Natação</label> <br>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar" class="wbut">
+            <input type="reset" value="Limpar" class="wbut">
+        </p>
+    </form>
+</body>
+</html>
