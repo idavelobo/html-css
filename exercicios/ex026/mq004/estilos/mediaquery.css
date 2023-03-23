@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/*
+typ dev breakpoints:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        background: url(../imagens/back-tablet.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    img#tablet{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+}
+
+/*
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        background: url(../imagens/back-laptop.jpg)
+    }
+    img#laptop{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+} */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    body{
+        background: url(../imagens/back-pc.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    img#pc{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    body{
+        background: url(../imagens/back-tv.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    img#tv{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+}
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: "Impressão em www.cursoemvideo.com";
+    }
+
+    img#print{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+}
