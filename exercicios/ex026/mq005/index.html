@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="tamanhoJanela()">
     <header>
         <h1>Site Media Query</h1>
         <span onclick="clickMenu()" id="burger" class="material-icons">menu</span>
@@ -39,6 +40,16 @@
             }
             else {
                 itens.style.display = 'block'
+            }
+        }
+    </script>
+    <script>
+                function tamanhoJanela() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
             }
         }
     </script>
